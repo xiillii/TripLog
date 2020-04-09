@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TripLog.Views.NewEntryPage"
+             BackgroundColor="{DynamicResource Background}"
+             Title="New Entry">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <TableView Intent="Form">
+            <TableView.Root>
+                <TableSection>
+                    <EntryCell Label="Title"
+                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                    <EntryCell Label="Latitude" Keyboard="Numeric"
+                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                    <EntryCell Label="Longitude" Keyboard="Numeric"
+                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                    <EntryCell Label="Date"
+                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                    <EntryCell Label="Rating" Keyboard="Numeric"
+                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                    <EntryCell Label="Notes"
+                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>

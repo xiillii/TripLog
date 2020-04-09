@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             x:Class="TripLog.Views.DetailPage"
+             BackgroundColor="{DynamicResource Background}"
+             Title="Detail">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="4*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <maps:Map x:Name="map" Grid.RowSpan="3" />
+            <BoxView Grid.Row="1" BackgroundColor="{DynamicResource ViewboxBackground}"
+                     Opacity=".8" />
+            <StackLayout Padding="10" Grid.Row="1">
+                <Label x:Name="title"
+                       HorizontalOptions="Center"
+                       TextColor="{DynamicResource TextColorLabel}">...</Label>
+                <Label x:Name="date"
+                       HorizontalOptions="Center"
+                       TextColor="{DynamicResource TextColorLabel}">...</Label>
+                <Label x:Name="rating"
+                       HorizontalOptions="Center"
+                       TextColor="{DynamicResource TextColorLabel}">...</Label>
+                <Label x:Name="notes"
+                       HorizontalOptions="Center"
+                       TextColor="{DynamicResource TextColorLabel}">...</Label>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

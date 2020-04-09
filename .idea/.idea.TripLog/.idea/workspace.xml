@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="679e471b-3b42-4483-a9c9-d8d2a678b6c8" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TripLog/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TripLog/Views/MainPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TripLog/Models/TripLogEntry.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TripLog/Views/MainPage.xaml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/TripLog/Models/TripLogEntry.cs" />
+        <option value="$PROJECT_DIR$/TripLog/App.xaml.cs" />
+        <option value="$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml.cs" />
+        <option value="$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml" />
+        <option value="$PROJECT_DIR$/TripLog/Views/MainPage.xaml" />
+        <option value="$PROJECT_DIR$/TripLog/Views/MainPage.xaml.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="InvalidFacetManager">
+    <ignored-facets>
+      <facet id="TripLog.Android/invalid/Android Facet - TripLog.Android" />
+    </ignored-facets>
+  </component>
+  <component name="ProjectId" id="1aIOUC8iJlejjB6XuFh7pkK63Hz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Device#class com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSSimulatorKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider" value="iPhone 11" />
+    <property name="DeviceKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider" value="Simulator" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
+  </component>
+  <component name="RunManager" selected="Xamarin.iOS.iOS Default">
+    <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEPLOY_BEHAVIOUR_NAME" value="Default" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="iOS Default" type="XamarinIOSProject" factoryName="Xamarin.iOS">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/TripLog.iOS/TripLog.iOS.csproj" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="IS_PASS_PARENT_ENVS" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="679e471b-3b42-4483-a9c9-d8d2a678b6c8" name="Default Changelist" comment="" />
+      <created>1586419656653</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586419656653</updated>
+      <workItem from="1586419667610" duration="4143000" />
+      <workItem from="1586454523301" duration="236000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="731" y="403" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586454574345">
+      <screen x="0" y="23" width="3405" height="1417" />
+    </state>
+    <state x="731" y="403" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1440.23.1440.877/0.23.3405.1417@0.23.3405.1417" timestamp="1586454574345" />
+    <state width="719" height="134" key="GridCell.Tab.0.bottom" timestamp="1586454448135">
+      <screen x="0" y="23" width="3405" height="1417" />
+    </state>
+    <state width="719" height="134" key="GridCell.Tab.0.bottom/-1440.23.1440.877/0.23.3405.1417@0.23.3405.1417" timestamp="1586454448135" />
+    <state width="719" height="134" key="GridCell.Tab.0.center" timestamp="1586454448134">
+      <screen x="0" y="23" width="3405" height="1417" />
+    </state>
+    <state width="719" height="134" key="GridCell.Tab.0.center/-1440.23.1440.877/0.23.3405.1417@0.23.3405.1417" timestamp="1586454448134" />
+    <state width="719" height="134" key="GridCell.Tab.0.left" timestamp="1586454448134">
+      <screen x="0" y="23" width="3405" height="1417" />
+    </state>
+    <state width="719" height="134" key="GridCell.Tab.0.left/-1440.23.1440.877/0.23.3405.1417@0.23.3405.1417" timestamp="1586454448134" />
+    <state width="719" height="134" key="GridCell.Tab.0.right" timestamp="1586454448135">
+      <screen x="0" y="23" width="3405" height="1417" />
+    </state>
+    <state width="719" height="134" key="GridCell.Tab.0.right/-1440.23.1440.877/0.23.3405.1417@0.23.3405.1417" timestamp="1586454448135" />
+    <state x="776" y="380" key="SettingsEditor" timestamp="1586454648569">
+      <screen x="0" y="23" width="3405" height="1417" />
+    </state>
+    <state x="776" y="380" key="SettingsEditor/-1440.23.1440.877/0.23.3405.1417@0.23.3405.1417" timestamp="1586454648569" />
+  </component>
+</project>
