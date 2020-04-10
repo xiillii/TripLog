@@ -25,11 +25,30 @@
                                Text="{Binding Longitude}"></controls:NumericEntryCell>
                     <EntryCell Label="Date"
                                LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Date, StringFormat='{0:d}'}"></EntryCell>
-                    <controls:RatingNumericEntryCell x:Name="rating"
+                               Text="{Binding Date, StringFormat='{0:d}'}"></EntryCell>                    
+                    <!--<controls:RatingNumericEntryCell x:Name="rating"
                                Label="Rating" Keyboard="Numeric"
                                LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Rating}"></controls:RatingNumericEntryCell>
+                               Text="{Binding Rating}"></controls:RatingNumericEntryCell>-->
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="18, 0">
+                            <Label x:Name="rating" Text="Rating" VerticalOptions="Center"
+                                   TextColor="{DynamicResource TextColorLabel}"/>
+                            <Picker Title="Choose Difficulty" VerticalOptions="Center"
+                                    HorizontalOptions="EndAndExpand"
+                                    SelectedItem="{Binding Rating}">
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Int32}">
+                                        <x:Int32>1</x:Int32>
+                                        <x:Int32>2</x:Int32>
+                                        <x:Int32>3</x:Int32>
+                                        <x:Int32>4</x:Int32>
+                                        <x:Int32>5</x:Int32>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                        </StackLayout>
+                    </ViewCell>
                     <EntryCell Label="Notes"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Notes}"></EntryCell>
