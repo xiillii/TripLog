@@ -6,24 +6,30 @@
              BackgroundColor="{DynamicResource Background}"
              Title="New Entry">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Save"/>
+        <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <TableView Intent="Form">
             <TableView.Root>
                 <TableSection>
                     <EntryCell Label="Title"
-                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                               LabelColor="{DynamicResource TextColorLabel}"
+                               Text="{Binding Title}"></EntryCell>
                     <EntryCell Label="Latitude" Keyboard="Numeric"
-                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                               LabelColor="{DynamicResource TextColorLabel}"
+                               Text="{Binding Latitude}"></EntryCell>
                     <EntryCell Label="Longitude" Keyboard="Numeric"
-                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                               LabelColor="{DynamicResource TextColorLabel}"
+                               Text="{Binding Longitude}"></EntryCell>
                     <EntryCell Label="Date"
-                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                               LabelColor="{DynamicResource TextColorLabel}"
+                               Text="{Binding Date, StringFormat='{0:d}'}"></EntryCell>
                     <EntryCell Label="Rating" Keyboard="Numeric"
-                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                               LabelColor="{DynamicResource TextColorLabel}"
+                               Text="{Binding Rating}"></EntryCell>
                     <EntryCell Label="Notes"
-                               LabelColor="{DynamicResource TextColorLabel}"></EntryCell>
+                               LabelColor="{DynamicResource TextColorLabel}"
+                               Text="{Binding Notes}"></EntryCell>
                 </TableSection>
             </TableView.Root>
         </TableView>
