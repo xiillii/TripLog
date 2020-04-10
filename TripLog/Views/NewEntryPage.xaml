@@ -2,6 +2,7 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:TripLog.Controls;assembly=TripLog"
              x:Class="TripLog.Views.NewEntryPage"
              BackgroundColor="{DynamicResource Background}"
              Title="New Entry">
@@ -12,21 +13,23 @@
         <TableView Intent="Form">
             <TableView.Root>
                 <TableSection>
-                    <EntryCell Label="Title"
+                    <EntryCell x:Name="title"
+                               Label="Title"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Title}"></EntryCell>
-                    <EntryCell Label="Latitude" Keyboard="Numeric"
+                    <controls:NumericEntryCell Label="Latitude" Keyboard="Numeric"
                                LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Latitude}"></EntryCell>
-                    <EntryCell Label="Longitude" Keyboard="Numeric"
+                               Text="{Binding Latitude}"></controls:NumericEntryCell>
+                    <controls:NumericEntryCell Label="Longitude" Keyboard="Numeric"
                                LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Longitude}"></EntryCell>
+                               Text="{Binding Longitude}"></controls:NumericEntryCell>
                     <EntryCell Label="Date"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Date, StringFormat='{0:d}'}"></EntryCell>
-                    <EntryCell Label="Rating" Keyboard="Numeric"
+                    <controls:RatingNumericEntryCell x:Name="rating"
+                               Label="Rating" Keyboard="Numeric"
                                LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Rating}"></EntryCell>
+                               Text="{Binding Rating}"></controls:RatingNumericEntryCell>
                     <EntryCell Label="Notes"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Notes}"></EntryCell>

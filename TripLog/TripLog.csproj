@@ -18,5 +18,6 @@
   <ItemGroup>
     <Folder Include="Views\" />
     <Folder Include="Styles\" />
+    <Folder Include="Controls\" />
   </ItemGroup>
 </Project>
