@@ -12,7 +12,9 @@
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.android.support.v7.appcompat/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.android.support.v7.recyclerview/28.0.0.3/proguard/monoandroid90/proguard.txt" />
     <content url="file://$USER_HOME$/.nuget/packages/xamarin.android.support.versionedparcelable/28.0.0.3/proguard/monoandroid90" />
-    <content url="file://$USER_HOME$/.nuget/packages/xamarin.forms/4.5.0.530/buildTransitive/MonoAndroid10" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.forms/4.5.0.617/buildTransitive/MonoAndroid10" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.googleplayservices.base/71.1610.0/proguard/MonoAndroid90/proguard.txt" />
+    <content url="file://$USER_HOME$/.nuget/packages/xamarin.googleplayservices.basement/71.1620.0/proguard/MonoAndroid90/proguard.txt" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

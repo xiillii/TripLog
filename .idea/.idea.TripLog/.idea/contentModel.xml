@@ -14,9 +14,11 @@
     <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.versionedparcelable/28.0.0.3/proguard/monoandroid90" t="Include">
       <e p="proguard.txt" t="Include" />
     </e>
-    <e p="$USER_HOME$/.nuget/packages/xamarin.forms/4.5.0.530/buildTransitive/MonoAndroid10" t="Include">
+    <e p="$USER_HOME$/.nuget/packages/xamarin.forms/4.5.0.617/buildTransitive/MonoAndroid10" t="Include">
       <e p="proguard.cfg" t="Include" />
     </e>
+    <e p="$USER_HOME$/.nuget/packages/xamarin.googleplayservices.base/71.1610.0/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.googleplayservices.basement/71.1620.0/proguard/monoandroid90/proguard.txt" t="Include" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
     <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_TripLog.-1591887662.00" t="ExcludeRecursive" />
     <e p="$USER_HOME$/Library/Developer/Xamarin/android-sdk-macosx/platforms/android-28/data/res" t="IncludeRecursive" />
@@ -27,6 +29,10 @@
         <e p="App.xaml.cs" t="Include" />
         <e p="AssemblyInfo.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Controls" t="Include">
+          <e p="NumericEntryCell.cs" t="Include" />
+          <e p="RatingNumericEntryCell.cs" t="Include" />
+        </e>
         <e p="Models" t="Include">
           <e p="TripLogEntry.cs" t="Include" />
         </e>
@@ -34,16 +40,40 @@
           <e p="Debug" t="Include">
             <e p="netstandard2.0" t="Include">
               <e p="App.xaml.g.cs" t="Include" />
+              <e p="Styles" t="Include">
+                <e p="DarkTheme.xaml.g.cs" t="Include" />
+                <e p="LightTheme.xaml.g.cs" t="Include" />
+              </e>
               <e p="TripLog.AssemblyInfo.cs" t="Include" />
               <e p="Views" t="Include">
+                <e p="DetailPage.xaml.g.cs" t="Include" />
                 <e p="MainPage.xaml.g.cs" t="Include" />
                 <e p="NewEntryPage.xaml.g.cs" t="Include" />
               </e>
             </e>
           </e>
         </e>
+        <e p="Services" t="Include">
+          <e p="INavService.cs" t="Include" />
+          <e p="XamarinFormsNavService.cs" t="Include" />
+        </e>
+        <e p="Styles" t="Include">
+          <e p="DarkTheme.xaml" t="Include" />
+          <e p="DarkTheme.xaml.cs" t="Include" />
+          <e p="LightTheme.xaml" t="Include" />
+          <e p="LightTheme.xaml.cs" t="Include" />
+        </e>
         <e p="TripLog.csproj" t="IncludeRecursive" />
+        <e p="ViewModels" t="Include">
+          <e p="BaseValidationViewModel.cs" t="Include" />
+          <e p="BaseViewModel.cs" t="Include" />
+          <e p="DetailViewModel.cs" t="Include" />
+          <e p="MainViewModel.cs" t="Include" />
+          <e p="NewEntryViewModel.cs" t="Include" />
+        </e>
         <e p="Views" t="Include">
+          <e p="DetailPage.xaml" t="Include" />
+          <e p="DetailPage.xaml.cs" t="Include" />
           <e p="MainPage.xaml" t="Include" />
           <e p="MainPage.xaml.cs" t="Include" />
           <e p="NewEntryPage.xaml" t="Include" />
@@ -127,6 +157,11 @@
         <e p="obj" t="ExcludeRecursive" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Renderers" t="Include">
+          <e p="NumericEntryCellRenderer.cs" t="Include" />
+          <e p="PageRenderer.cs" t="Include" />
+          <e p="RatingEntryCellRenderer.cs" t="Include" />
         </e>
         <e p="Resources" t="Include">
           <e p="LaunchScreen.storyboard" t="Include" />

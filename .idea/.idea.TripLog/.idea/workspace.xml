@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="679e471b-3b42-4483-a9c9-d8d2a678b6c8" name="Default Changelist" comment="" />
+    <list default="true" id="679e471b-3b42-4483-a9c9-d8d2a678b6c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TripLog/Services/INavService.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TripLog/Services/XamarinFormsNavService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripLog/TripLog.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/TripLog/TripLog.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripLog/ViewModels/BaseViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TripLog/ViewModels/BaseViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripLog/ViewModels/DetailViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TripLog/ViewModels/DetailViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripLog/ViewModels/MainViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TripLog/ViewModels/MainViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripLog/ViewModels/NewEntryViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TripLog/ViewModels/NewEntryViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripLog/Views/DetailPage.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/TripLog/Views/DetailPage.xaml.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/TripLog/Services/XamarinFormsNavService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TripLog/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/TripLog/ViewModels/BaseViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/TripLog/Views/MainPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
@@ -24,6 +38,7 @@
         <option value="$PROJECT_DIR$/TripLog/Views/NewEntryPage.xaml" />
         <option value="$PROJECT_DIR$/TripLog/Views/MainPage.xaml" />
         <option value="$PROJECT_DIR$/TripLog/Views/MainPage.xaml.cs" />
+        <option value="$PROJECT_DIR$/TripLog/Services/XamarinFormsNavService.cs" />
       </list>
     </option>
   </component>
@@ -33,6 +48,7 @@
     </ignored-facets>
   </component>
   <component name="ProjectId" id="1aIOUC8iJlejjB6XuFh7pkK63Hz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -43,6 +59,7 @@
     <property name="DeviceKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider" value="Simulator" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
@@ -77,6 +94,7 @@
       <updated>1586419656653</updated>
       <workItem from="1586419667610" duration="4143000" />
       <workItem from="1586454523301" duration="236000" />
+      <workItem from="1586890791915" duration="284000" />
     </task>
     <servers />
   </component>

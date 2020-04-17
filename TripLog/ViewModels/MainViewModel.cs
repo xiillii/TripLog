@@ -2,11 +2,19 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using TripLog.Models;
+using TripLog.Services;
+using Xamarin.Forms;
 
 namespace TripLog.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {
+        public Command<TripLogEntry> ViewCommand => new Command<TripLogEntry>(
+            async entry => await NavService.NavigateTo<DetailViewModel, TripLogEntry>(entry));
+
+        public Command NewCommand => new Command(async () =>
+            await NavService.NavigateTo<NewEntryViewModel>());
+
         private ObservableCollection<TripLogEntry> _logEntries;
 
         public ObservableCollection<TripLogEntry> LogEntries
@@ -19,10 +27,20 @@ namespace TripLog.ViewModels
             }
         }
 
-        public MainViewModel()
+        public MainViewModel(INavService navService) : base(navService)
         {
-            LogEntries = new ObservableCollection<TripLogEntry>
-            {
+            LogEntries = new ObservableCollection<TripLogEntry>();
+        }
+
+        public override void Init()
+        {
+            LoadEntries();
+        }
+
+        private void LoadEntries()
+        {
+            LogEntries.Clear();
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Estrella de Puebla",
@@ -31,7 +49,8 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2019, 9, 15),
                     Latitude = 19.0348473,
                     Longitude = -98.2321892
-                },
+                });
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Pirámide de Cholula",
@@ -40,7 +59,8 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2020, 1, 1),
                     Latitude = 19.0552611,
                     Longitude = -98.3015374
-                },
+                });
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Reserva de la Biósfera de Calakmul",
@@ -49,7 +69,8 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2001, 2, 28),
                     Latitude = 18.8284815,
                     Longitude = -89.6360779
-                },
+                });
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Grutas de Tolantongo, Hidalgo",
@@ -58,7 +79,8 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2015, 2, 3),
                     Latitude = 26.7410186,
                     Longitude = -103.820979
-                },
+                });
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Washington Monument",
@@ -67,7 +89,8 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2019, 2, 5),
                     Latitude = 38.8895,
                     Longitude = -77.0352
-                },
+                });
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Statue of Liberty",
@@ -76,7 +99,8 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2019, 4, 13),
                     Latitude = 40.6892,
                     Longitude = -74.0444
-                },
+                });
+            LogEntries.Add(
                 new TripLogEntry
                 {
                     Title = "Golden Gate Bridge",
@@ -85,8 +109,7 @@ namespace TripLog.ViewModels
                     Date = new DateTime(2019, 4, 26),
                     Latitude = 37.8268,
                     Longitude = -122.4798
-                }
-            };
+                });                   
         }
     }
 }
