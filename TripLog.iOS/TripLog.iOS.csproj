@@ -71,6 +71,8 @@
     <Compile Include="Renderers\PageRenderer.cs" />
     <Compile Include="Renderers\RatingEntryCellRenderer.cs" />
     <Compile Include="Renderers\NumericEntryCellRenderer.cs" />
+    <Compile Include="Services\LocationService.cs" />
+    <Compile Include="Modules\TripLogPlatformModule.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -131,6 +133,9 @@
     <PackageReference Include="Xamarin.Forms.Maps">
       <Version>4.5.0.617</Version>
     </PackageReference>
+    <PackageReference Include="Portable.Ninject">
+      <Version>3.3.1</Version>
+    </PackageReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
@@ -141,5 +146,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Renderers\" />
+    <Folder Include="Services\" />
+    <Folder Include="Modules\" />
   </ItemGroup>
 </Project>
