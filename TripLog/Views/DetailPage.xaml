@@ -26,22 +26,26 @@
                 <Label x:Name="title"
                        HorizontalOptions="Center"
                        TextColor="{DynamicResource TextColorLabel}"
-                       Text="{Binding Entry.Title}"/>
+                       Text="{Binding Entry.Title}"
+                       AutomationProperties.IsInAccessibleTree="True"
+                       AutomationProperties.HelpText="Title of trip"/>
                 <Label x:Name="date"
                        HorizontalOptions="Center"
                        TextColor="{DynamicResource TextColorLabel}"
-                       Text="{Binding Entry.Date, StringFormat='{0:M}'}"/>
+                       Text="{Binding Entry.Date, StringFormat='{0:M}'}"
+                       AutomationProperties.IsInAccessibleTree="True"
+                       AutomationProperties.HelpText="Date of trip"/>
                 <Image HorizontalOptions="Center"
                        Source="{Binding Entry.Rating,
-                    Converter={StaticResource RatingToStarImageNameConverter}}"/>
-                <Label x:Name="rating"
-                       HorizontalOptions="Center"
-                       TextColor="{DynamicResource TextColorLabel}"
-                       Text="{Binding Entry.Rating, StringFormat='{0} star rating'}"/>
+                    Converter={StaticResource RatingToStarImageNameConverter}}"
+                       AutomationProperties.IsInAccessibleTree="True"
+                       AutomationProperties.HelpText="{Binding Entry.Rating, StringFormat='{0} star rating'}"/>                
                 <Label x:Name="notes"
                        HorizontalOptions="Center"
                        TextColor="{DynamicResource TextColorLabel}"
-                       Text="{Binding Entry.Notes}"/>
+                       Text="{Binding Entry.Notes}"
+                       AutomationProperties.IsInAccessibleTree="True"
+                       AutomationProperties.HelpText="Notes from trip"/>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

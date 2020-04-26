@@ -10,6 +10,9 @@
         <ToolbarItem Text="New" Command="{Binding NewCommand}"></ToolbarItem>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
+        <RefreshView
+            IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+            Command="{Binding RefreshCommand}">        
         <CollectionView x:Name="trips"
                         SelectionMode="Single"
                         ItemsSource="{Binding LogEntries}">
@@ -44,5 +47,6 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+            </RefreshView>
     </ContentPage.Content>
 </ContentPage>
