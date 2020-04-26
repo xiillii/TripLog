@@ -45,12 +45,17 @@ namespace TripLog.Views
                 }
                 else
                 {
-                    color = Color.Default;
+                    //color = Color.Black;
+                    color = new Color(Color.Default.R < 0 ? 0 : Color.Default.R,
+                        Color.Default.G < 0 ? 0 : Color.Default.G,
+                        Color.Default.B < 0 ? 0 : Color.Default.B);
                 }
             }
             else
             {
-                color = Color.Default;
+                color = new Color(Color.Default.R < 0 ? 0 : Color.Default.R,
+                        Color.Default.G < 0 ? 0 : Color.Default.G,
+                        Color.Default.B < 0 ? 0 : Color.Default.B);
             }
 
             switch (e.PropertyName)

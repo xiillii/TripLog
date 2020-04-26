@@ -22,5 +22,6 @@
     <Folder Include="Controls\" />
     <Folder Include="Services\" />
     <Folder Include="Modules\" />
+    <Folder Include="Converters\" />
   </ItemGroup>
 </Project>

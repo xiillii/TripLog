@@ -20,19 +20,36 @@ namespace TripLog.ViewModels
 
         private async Task Save()
         {
-            var newItem = new TripLogEntry
+            if (IsBusy)
             {
-                Title = Title,
-                Latitude = Latitude,
-                Longitude = Longitude,
-                Date = Date,
-                Rating = Rating,
-                Notes = Notes
-            };
+                return;
+            }
 
-            // TODO: Persist entry
+            IsBusy = true;
 
-            await NavService.GoBack();
+            try
+            {
+                /**/
+                var newItem = new TripLogEntry
+                {
+                    Title = Title,
+                    Latitude = Latitude,
+                    Longitude = Longitude,
+                    Date = Date,
+                    Rating = Rating,
+                    Notes = Notes
+                };
+
+                // TODO: Persist entry
+
+                await Task.Delay(3000);
+
+                await NavService.GoBack();
+            }
+            finally
+            {
+                IsBusy = false;
+            }
         }
 
         bool CanSave() => !string.IsNullOrWhiteSpace(Title) && !HasErrors;

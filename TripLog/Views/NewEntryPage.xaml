@@ -3,57 +3,71 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:controls="clr-namespace:TripLog.Controls;assembly=TripLog"
+             xmlns:converters="clr-namespace:TripLog.Converters;assembly=TripLog"
              x:Class="TripLog.Views.NewEntryPage"
              BackgroundColor="{DynamicResource Background}"
              Title="New Entry">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:ReverseBooleanConverter
+                x:Key="ReverseBooleanConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Save" Command="{Binding SaveCommand}"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <TableView Intent="Form">
-            <TableView.Root>
-                <TableSection>
-                    <EntryCell x:Name="title"
+        <Grid>
+            <TableView Intent="Form"
+                   IsVisible="{Binding IsBusy, Converter={StaticResource ReverseBooleanConverter}}">
+                <TableView.Root>
+                    <TableSection>
+                        <EntryCell x:Name="title"
                                Label="Title"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Title}"></EntryCell>
-                    <controls:NumericEntryCell Label="Latitude" Keyboard="Numeric"
+                        <controls:NumericEntryCell Label="Latitude" Keyboard="Numeric"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Latitude}"></controls:NumericEntryCell>
-                    <controls:NumericEntryCell Label="Longitude" Keyboard="Numeric"
+                        <controls:NumericEntryCell Label="Longitude" Keyboard="Numeric"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Longitude}"></controls:NumericEntryCell>
-                    <EntryCell Label="Date"
+                        <controls:DatePickerEntryCell Label="Date"
                                LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Date, StringFormat='{0:d}'}"></EntryCell>                    
-                    <!--<controls:RatingNumericEntryCell x:Name="rating"
-                               Label="Rating" Keyboard="Numeric"
-                               LabelColor="{DynamicResource TextColorLabel}"
-                               Text="{Binding Rating}"></controls:RatingNumericEntryCell>-->
-                    <ViewCell>
-                        <StackLayout Orientation="Horizontal" Margin="18, 0">
-                            <Label x:Name="rating" Text="Rating" VerticalOptions="Center"
+                               Date="{Binding Date, StringFormat='{0:d}'}" />
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal" Margin="18, 0">
+                                <Label x:Name="rating" Text="Rating" VerticalOptions="Center"
                                    TextColor="{DynamicResource TextColorLabel}"/>
-                            <Picker Title="Choose Difficulty" VerticalOptions="Center"
+                                <Picker Title="Choose Difficulty" VerticalOptions="Center"
                                     HorizontalOptions="EndAndExpand"
                                     SelectedItem="{Binding Rating}">
-                                <Picker.ItemsSource>
-                                    <x:Array Type="{x:Type x:Int32}">
-                                        <x:Int32>1</x:Int32>
-                                        <x:Int32>2</x:Int32>
-                                        <x:Int32>3</x:Int32>
-                                        <x:Int32>4</x:Int32>
-                                        <x:Int32>5</x:Int32>
-                                    </x:Array>
-                                </Picker.ItemsSource>
-                            </Picker>
-                        </StackLayout>
-                    </ViewCell>
-                    <EntryCell Label="Notes"
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:Int32}">
+                                            <x:Int32>1</x:Int32>
+                                            <x:Int32>2</x:Int32>
+                                            <x:Int32>3</x:Int32>
+                                            <x:Int32>4</x:Int32>
+                                            <x:Int32>5</x:Int32>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+                            </StackLayout>
+                        </ViewCell>
+                        <EntryCell Label="Notes"
                                LabelColor="{DynamicResource TextColorLabel}"
                                Text="{Binding Notes}"></EntryCell>
-                </TableSection>
-            </TableView.Root>
-        </TableView>
+                    </TableSection>
+                </TableView.Root>
+            </TableView>
+            <StackLayout Orientation="Vertical"
+                     VerticalOptions="Center"
+                     HorizontalOptions="Center"
+                     IsVisible="{Binding IsBusy}">
+                <ActivityIndicator IsRunning="True"/>
+                <Label Text="Saving new entry..."
+                       TextColor="{DynamicResource TextColorLabel}"/>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

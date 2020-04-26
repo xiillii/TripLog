@@ -2,9 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:converters="clr-namespace:TripLog.Converters;assembly=TripLog"
              x:Class="TripLog.Views.DetailPage"
              BackgroundColor="{DynamicResource Background}"
              Title="Detail">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:RatingToStarImageNameConverter
+                x:Key="RatingToStarImageNameConverter"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -24,6 +31,9 @@
                        HorizontalOptions="Center"
                        TextColor="{DynamicResource TextColorLabel}"
                        Text="{Binding Entry.Date, StringFormat='{0:M}'}"/>
+                <Image HorizontalOptions="Center"
+                       Source="{Binding Entry.Rating,
+                    Converter={StaticResource RatingToStarImageNameConverter}}"/>
                 <Label x:Name="rating"
                        HorizontalOptions="Center"
                        TextColor="{DynamicResource TextColorLabel}"
